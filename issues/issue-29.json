@@ -1,0 +1,159 @@
+{
+    "issueNumber": "29",
+    "publishedBy": "Coding Club",
+    "publishDate": "17th October, 2025",
+    "bugPosition": {
+        "top": "40%",
+        "left": "25%"
+    },
+    "columns": [
+        {
+            "columnNumber": 1,
+            "articles": [
+                {
+                    "headline": "yap",
+                    "headlineClass": "hl3",
+                    "readMoreLink": "put link here",
+                    "content": [
+                        {
+                            "type": "emphasis",
+                            "text": "yap"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "yap"
+                        },
+                        {
+                            "type": "citation",
+                            "text": "\"yap\""
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "yap"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "yap"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "columnNumber": 2,
+            "articles": [
+                {
+                    "headline": "yap",
+                    "headlineClass": "hl5",
+                    "readMoreLink": "https://www.ibm.com/cloud/what-is-edge-computing",
+                    "content": [
+                        {
+                            "type": "paragraph",
+                            "text": "yap"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "yap"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "yap"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "yap"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "columnNumber": 3,
+            "articles": [
+                {
+                    "headline": "yap",
+                    "headlineClass": "hl1",
+                    "readMoreLink": "put link here",
+                    "content": [
+                        {
+                            "type": "paragraph",
+                            "text": "yap"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "yap"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "yap"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "yap"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "columnNumber": 4,
+            "articles": [
+                {
+                    "headline": "Stand on the shoulders of giants",
+                    "headlineClass": "hl3",
+                    "subheadline": "Recent Faculty Publications",
+                    "subheadlineClass": "hl4",
+                    "content": [
+                        {
+                            "type": "paragraph",
+                            "text": "yap",
+                            "facultyLink": "put link here"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "yap",
+                            "facultyLink": "put link here"
+                        }
+                    ]
+                },
+                {
+                    "headline": "Tech Trivia",
+                    "headlineClass": "hl5",
+                    "subheadline": "Did You Know?",
+                    "subheadlineClass": "hl6",
+                    "content": [
+                        {
+                            "type": "paragraph",
+                            "text": "yap"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "columnNumber": 5,
+            "articles": [
+                {
+                    "headline": "Peer2Peer",
+                    "headlineClass": "hl1",
+                    "subheadline": "by HAZIM ANWAR",
+                    "subheadlineClass": "hl4",
+                    "content": [
+                        {
+                            "type": "paragraph",
+                            "text": "yap"
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "yap"
+                        },
+                        {
+                            "type": "emphasis",
+                            "text": "Want to get featured on the next Tech Talk? Write about any topic that inspires you — tech-related or beyond and email your submission to codingclub2024@aurak.ac.ae."
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,155 @@
+{
+    "issueNumber": "28",
+    "publishedBy": "Coding Club",
+    "publishDate": "6th October, 2025",
+    "bugPosition": {
+        "top": "55%",
+        "left": "80%"
+    },
+    "columns": [
+        {
+            "columnNumber": 1,
+            "articles": [
+                {
+                    "headline": "OpenAI's Next Leap in Realistic Video Generation",
+                    "headlineClass": "hl3",
+                    "readMoreLink": "https://openai.com/index/sora-2",
+                    "content": [
+                        {
+                            "type": "emphasis",
+                            "text": "Welcome Back, Coders! New semester, new updates! Tech never sleeps and neither do we (almost). This edition of Tech Talk is packed with the latest buzz, breakthroughs, and byte-sized news to get your brain ticking."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "OpenAI has released Sora 2, an upgraded video and audio generation model designed to improve physical accuracy, sound synchronization, and scene control. The model supports detailed physical interactions such as object motion, rebounds, and buoyancy while enabling synchronized dialogue and ambient sound generation. A new cameo feature allows users to insert themselves into generated scenes with high visual and motion fidelity. Sora 2 is initially available through the Sora iOS app in the United States and Canada, with web and API access planned for later. OpenAI has also introduced safety measures including content moderation, consent-based likeness use, and usage limits for younger users."
+                        },
+                        {
+                            "type": "citation",
+                            "text": "\"Any sufficiently advanced technology is indistinguishable from magic.\""
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Today's quote is from Arthur C. Clarke's Profiles of the Future: An Inquiry into the Limits of the Possible. Clarke, a renowned science fiction writer and futurist, was exploring the difficulty of predicting the future. He argued that if a civilization encountered technology far more advanced than its own, it would have no scientific framework to understand it and would perceive it as supernatural or magical."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "With that in mind, to the wizards of our club: Remember, every line of code is a spell. Cast brilliantly!"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "columnNumber": 2,
+            "articles": [
+                {
+                    "headline": "Red Hat Breach",
+                    "headlineClass": "hl5",
+                    "readMoreLink": "https://access.redhat.com/articles/7132207",
+                    "content": [
+                        {
+                            "type": "paragraph",
+                            "text": "Red Hat confirmed a security breach involving a GitLab instance used by its consulting division. An unauthorized actor accessed and copied nearly 570GB of compressed data across 28,000 internal development repositories, including Customer Engagement Reports that may contain configuration details, authentication tokens, and architecture diagrams. Red Hat stated that the affected system was isolated and that no evidence currently suggests exposure of personal data or impact on its broader infrastructure. The company is notifying consulting clients and strengthening security measures while agencies advise organizations to rotate credentials and review Red Hat integrations."
+                        },
+                        {
+                            "type": "figure",
+                            "src": "https://pbs.twimg.com/media/G2VaJu5XEAAePVJ.jpg:large",
+                            "alt": "Red Hat data breach summary headline",
+                            "caption": "Red Hat data breach summary headline."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "GitLab is a comprehensive DevOps platform for managing the entire software lifecycle. While it can be self-hosted for greater control, these instances require diligent security management, as misconfigurations or unpatched systems containing sensitive data can be vulnerable to unauthorized access."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Red Hat, an IBM subsidiary, is a leading provider of enterprise open-source solutions like Red Hat Enterprise Linux (RHEL), OpenShift, and Ansible. It builds and supports secure, reliable systems for businesses, making any security incident involving its products a significant event in the industry."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "columnNumber": 3,
+            "articles": [
+                {
+                    "headline": "Hair Rendering Gets a Major Upgrade",
+                    "headlineClass": "hl1",
+                    "readMoreLink": "https://www.cemyuksel.com/research/hairmesh_rendering/",
+                    "content": [
+                        {
+                            "type": "paragraph",
+                            "text": "A new research paper on Hair Mesh Rendering introduces a method for real-time generation of complex hairstyles using minimal storage and computation. Instead of storing millions of hair strands, the system encodes the overall hair volume and flow in a compact “hair mesh,” which acts as a blueprint. During rendering, the GPU generates all strands on the fly from this data, discarding them after each frame to save memory. This approach achieves performance of about 2 milliseconds per frame for entire scenes while requiring only 18 kilobytes per model. It also supports dynamic level-of-detail, adjusting strand density with distance to optimize performance. The technique currently works only with its custom mesh format but represents a significant step toward efficient, physically consistent hair rendering in real-time graphics."
+                        },
+                        {
+                            "type": "figure",
+                            "src": "https://cdnb.artstation.com/p/assets/images/images/066/914/797/original/3d-scan-store-gif.gif?1694081534",
+                            "alt": "The process of hair mesh rendering",
+                            "caption": "\"The process of hair mesh rendering.\""
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "While simple and performant, the fundamental challenge of hair mesh rendering lies in overcoming the inherent trade-off between visual fidelity and the limitations of polygonal surfaces. Because the hair is represented by solid, opaque geometry, it lacks the fine, semi-transparent quality of real hair, particularly along the silhouette edges where the sheet of polygons becomes glaringly apparent. To mitigate this, artists and developers employ several techniques, such as using multiple layered, semi-transparent shells or cards that fade out at the edges, often with alpha-tested or alpha-clipped textures to define individual strands within the mesh. However, this can introduce sorting issues and a popping effect as the camera moves. Furthermore, hair mesh rendering struggles with dynamic properties like realistic light absorption and scattering (subsurface scattering), as the shaders are typically applied to a solid surface rather than a volume of micro-strands, often resulting in a more plastic or solid appearance unless supplemented with sophisticated shader work."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "columnNumber": 4,
+            "articles": [
+                {
+                    "headline": "Stand on the shoulders of giants",
+                    "headlineClass": "hl3",
+                    "subheadline": "Recent Faculty Publications",
+                    "subheadlineClass": "hl4",
+                    "content": [
+                        {
+                            "type": "paragraph",
+                            "text": "We are thrilled to have this space to showcase the inpirational research of our very own doctors. This is our chance to pull back the curtain on the brilliant minds who shape our education, to share the stories behind the studies—the late nights in the lab, the unexpected breakthroughs, and the personal passions that fuel their curiosity, all of which remind us that learning doesn’t stop at lectures. Highlighting their research not only celebrates their achievements but also opens our eyes to the possibilities of joining them in this journey. It’s a chance for us to stay aware of the latest developments shaping our fields and to feel a little closer to the world of innovation that we’re all working toward becoming part of."
+                        },
+                        {
+                            "type": "paragraph",
+                            "text": "Available starting next issue!"
+                        }
+                    ]
+                },
+                {
+                    "headline": "Tech Trivia",
+                    "headlineClass": "hl5",
+                    "subheadline": "Did You Know?",
+                    "subheadlineClass": "hl6",
+                    "content": [
+                        {
+                            "type": "paragraph",
+                            "text": "The first computer mouse, invented by Douglas Engelbart in 1964, was made entirely of wood and had only one button. It used two perpendicular metal wheels on the bottom to track movement—no optical sensor or ball—and was nicknamed the \"bug,\" but this term was not widely adopted."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "columnNumber": 5,
+            "articles": [
+                {
+                    "headline": "Peer2Peer",
+                    "headlineClass": "hl1",
+                    "subheadline": "by STUDENT VOICES",
+                    "subheadlineClass": "hl4",
+                    "content": [
+                        {
+                            "type": "paragraph",
+                            "text": "The term peer-to-peer (often written as P2P) originally referred to a network model where computers, or “peers,” share resources directly with each other without needing a central server; a concept that became widely known during the early days of file-sharing platforms like Napster in the late 1990s. Here, it's a column in our newspaper dedicated to student voices, where we can learn from one another’s stories, advice, and reflections. Student to student, and peer to peer."
+                        },
+                        {
+                            "type": "emphasis",
+                            "text": "Want to get featured on the next Tech Talk? Write about any topic that inspires you — tech-related or beyond and email your submission to codingclub2024@aurak.ac.ae."
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+
+

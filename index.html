@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title id="page-title">AURAK's Tech Talk - Issue #29</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width">
+    <style>
+      /* Bug styles */
+      .hidden-bug {
+        position: absolute;
+        top: 45%;
+        left: 73%;
+        cursor: pointer;
+        z-index: 100;
+        width: 10px;
+        height: 10px;
+      }
+      
+      .bug-icon {
+        width: 10px;
+        height: 10px;
+        opacity: 0.60;
+      }
+      
+      .bug-found {
+        animation: celebrate 0.5s ease-in-out;
+      }
+      
+      @keyframes celebrate {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.5); background-color: #FFD700; }
+        100% { transform: scale(1); }
+      }
+      
+      /* Tech Talk hover popup styles */
+      .tech-talk-underline {
+        text-decoration: underline;
+        text-decoration-color: rgba(47, 47, 47, 0.5);
+        text-underline-offset: 8px;
+        text-decoration-thickness: 2px;
+        cursor: help;
+        position: relative;
+      }
+      
+      .tech-talk-popup {
+        position: absolute;
+        top: 120%;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #f9f7f1;
+        border: 2px solid #2f2f2f;
+        border-radius: 8px;
+        padding: 20px;
+        width: 400px;
+        font-family: 'Droid Serif', serif;
+        font-size: 14px;
+        line-height: 1.6;
+        z-index: 3000;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s, visibility 0.3s;
+      }
+      
+      .tech-talk-underline:hover .tech-talk-popup {
+        opacity: 1;
+        visibility: visible;
+      }
+      
+      .popup-title {
+        font-family: 'Droid Serif', serif;
+        font-weight: 700;
+        font-size: 18px;
+        color: #2f2f2f;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+      
+      .popup-content {
+        color: #2f2f2f;
+        text-align: left;
+        font-weight: 400;
+      }
+      
+      .popup-content ul {
+        margin: 10px 0;
+        padding-left: 20px;
+      }
+      
+      .popup-content li {
+        margin-bottom: 5px;
+      }
+      
+      .popup-highlight {
+        font-weight: bold;
+        color: #3dad3d;
+      }
+      
+      /* Hacking Text Reveal Animation */
+      .hacking-reveal {
+        opacity: 0;
+        animation: hackingReveal 2s ease-out forwards;
+      }
+      
+      @keyframes hackingReveal {
+        0% {
+          opacity: 1;
+          filter: blur(2px);
+        }
+        50% {
+          filter: blur(1px);
+        }
+        100% {
+          opacity: 1;
+          filter: blur(0);
+        }
+      }
+      
+      .hacking-char {
+        display: inline-block;
+        position: relative;
+      }
+      
+      .hacking-char.animate {
+        animation: charGlitch 0.1s infinite;
+      }
+      
+      @keyframes charGlitch {
+        0%, 100% { transform: translateX(0); }
+        25% { transform: translateX(-1px); }
+        75% { transform: translateX(1px); }
+      }
+
+      /* Prevent text bleeding during transitions */
+      #articles-container {
+        transition: opacity 0.2s ease-in-out;
+        overflow: hidden;
+      }
+
+      .collumn {
+        overflow: hidden;
+        word-wrap: break-word;
+        hyphens: auto;
+      }
+
+      .collumn p, .collumn .headline, .collumn .citation {
+        overflow-wrap: break-word;
+        word-break: break-word;
+        max-width: 100%;
+      }
+
+    </style>
+    <script src="newspaper.js"></script>
+</head>
+<body>
+    <!-- Hidden Bug -->
+    <div class="hidden-bug" onclick="bugFound()" title="You found the bug!">
+      <img src="assets/bug.png" alt="Bug" class="bug-icon">
+    </div>
+    
+    <div class="head">
+        <div class="headerobjectswrapper">
+            <div class="weatherforcastbox">
+                <div style="margin-bottom: 4px; display: flex; align-items: center;">
+                    <img src="assets/youtube.png" alt="YouTube" style="width: 16px; height: 16px; margin-right: 6px;">
+                    <a href="https://www.youtube.com/@AurakCodingClub" target="_blank" style="color: black; text-decoration: none;">Watch us on YouTube</a>
+                </div>
+                <div style="margin-bottom: 4px; display: flex; align-items: center;">
+                    <img src="assets/discord.png" alt="Discord" style="width: 16px; height: 16px; margin-right: 6px;">
+                    <a href="https://discord.gg/HRJCd6hMcz" target="_blank" style="color: black; text-decoration: none;">Chat with us on Discord</a>
+                </div>
+                <div style="margin-bottom: 4px; display: flex; align-items: center;">
+                    <img src="assets/github.png" alt="GitHub" style="width: 16px; height: 16px; margin-right: 6px;">
+                    <a href="https://github.com/AURAK-Coding-Club" target="_blank" style="color: black; text-decoration: none;">Find our updates on GitHub</a>
+                </div>
+            </div>
+            <header>AURAK'S <span class="tech-talk-underline">Tech Talk
+              <div class="tech-talk-popup">
+                <div class="popup-content">
+                  <p>This is AURAK's tech newsletter! Each issue features:</p>
+                  <ul>
+                    <li><strong>3 Latest Tech News</strong></li>
+                    <li><strong>Quote of the Day</strong></li>
+                    <li><strong>Tech Trivia</strong></li>
+                    <li><strong>Recent Faculty Publications</strong></li>
+                    <li><strong>Peer2Peer:</strong> Student voices and perspectives</li>
+                    <li><span class="popup-highlight">THE BUG HUNT!</span> - Have you found today's bug?</li>
+                  </ul>
+                </div>
+              </div>
+            </span></header>
+        </div>
+
+        <div class="subhead" style="position: relative; text-align: center;">
+            <a href="https://ishortn.ink/TechTalkMag" target="_blank" style="position: absolute; left: 40px; top: 50%; transform: translateY(-50%); color: black; text-decoration: none; font-size: 12px; display: flex; align-items: center;">
+                <img src="assets/view.png" alt="View" style="width: 14px; height: 14px; margin-right: 4px;">
+                view legacy tech talk issues
+            </a>
+            <span id="issue-info">Issue #29 brought to you by the <strong>Coding Club</strong> on <em>6th October, 2025</em></span>
+            <div style="position: absolute; right: 40px; top: 50%; transform: translateY(-50%); display: flex; align-items: center; gap: 8px;">
+                <img id="prev-arrow" src="assets/left-arrow.png" alt="Previous Issue" title="Go to previous issue." style="width: 16px; height: 16px; cursor: pointer;">
+                <img id="next-arrow" src="assets/right-arrow.png" alt="Next Issue" title="Go to next issue." style="width: 16px; height: 16px; cursor: pointer;">
+            </div>
+        </div>
+    </div>
+    
+    <div class="content" id="page-container">
+        <div id="page-content">
+            <div class="collumns" id="articles-container">
+                <!-- Articles will be loaded here dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <script src="newspaper.js"></script>
+    <script>
+        // Bug hunt functionality
+        function bugFound() {
+          const bug = document.querySelector('.hidden-bug');
+          
+          bug.classList.add('bug-found');
+          
+          // Create celebration effect
+          const celebration = document.createElement('div');
+          celebration.innerHTML = '🎉 Bug Found! 🎉';
+          celebration.style.position = 'absolute';
+          celebration.style.top = '-30px';
+          celebration.style.left = '-20px';
+          celebration.style.background = '#FFD700';
+          celebration.style.padding = '5px 10px';
+          celebration.style.borderRadius = '5px';
+          celebration.style.fontSize = '12px';
+          celebration.style.fontWeight = 'bold';
+          celebration.style.whiteSpace = 'nowrap';
+          celebration.style.zIndex = '1001';
+          
+          bug.appendChild(celebration);
+          
+          // Reset after 3 seconds
+          setTimeout(() => {
+            bug.classList.remove('bug-found');
+            if (celebration.parentNode) {
+              celebration.parentNode.removeChild(celebration);
+            }
+          }, 3000);
+        }
+    </script>
+</body>
+</html>
