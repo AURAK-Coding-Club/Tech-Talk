@@ -166,6 +166,39 @@
         max-width: 100%;
       }
 
+      /* Visitor Counter Badge Styles */
+      .visitor-counter {
+        position: fixed;
+        top: 50px;
+        right: 420px;
+        z-index: 1000;
+        opacity: 1.0;
+        transition: opacity 0.3s ease;
+      }
+      
+      .visitor-counter:hover {
+        opacity: 1;
+      }
+
+      /* Mobile styles */
+      @media only all and (max-width: 600px) {
+        .legacy-button {
+          display: none !important;
+        }
+        .visitor-counter {
+          display: none !important;
+        }
+        .subhead {
+          padding: 12px 0 50px 0;
+        }
+        .navigation-arrows {
+          position: static !important;
+          display: block !important;
+          text-align: center;
+          margin-top: 15px;
+        }
+      }
+
     </style>
 </head>
 <body>
@@ -208,12 +241,12 @@
         </div>
 
         <div class="subhead" style="position: relative; text-align: center;">
-            <a href="https://ishortn.ink/TechTalkMag" target="_blank" style="position: absolute; left: 40px; top: 50%; transform: translateY(-50%); color: black; text-decoration: none; font-size: 12px; display: flex; align-items: center;">
+            <a href="https://ishortn.ink/TechTalkMag" target="_blank" class="legacy-button" style="position: absolute; left: 40px; top: 50%; transform: translateY(-50%); color: black; text-decoration: none; font-size: 12px; display: flex; align-items: center;">
                 <img src="assets/view.png" alt="View" style="width: 14px; height: 14px; margin-right: 4px;">
                 view legacy tech talk issues
             </a>
             <span id="issue-info">Issue #29 brought to you by the <strong>Coding Club</strong> on <em>6th October, 2025</em></span>
-            <div style="position: absolute; right: 40px; top: 50%; transform: translateY(-50%); display: flex; align-items: center; gap: 8px;">
+            <div class="navigation-arrows" style="position: absolute; right: 40px; top: 50%; transform: translateY(-50%); display: flex; align-items: center; gap: 8px;">
                 <img id="prev-arrow" src="assets/left-arrow.png" alt="Previous Issue" title="Go to previous issue." style="width: 16px; height: 16px; cursor: pointer;">
                 <img id="next-arrow" src="assets/right-arrow.png" alt="Next Issue" title="Go to next issue." style="width: 16px; height: 16px; cursor: pointer;">
             </div>
@@ -226,6 +259,11 @@
                 <!-- Articles will be loaded here dynamically -->
             </div>
         </div>
+    </div>
+
+    <!-- Visitor Counter Badge -->
+    <div class="visitor-counter">
+        <img src="https://visitor-badge.laobi.icu/badge?page_id=aurak-coding-club.github.io/Tech-Talk&left_color=%231f1f1f&right_color=%231f1f1f&left_text_color=%23f9f7f1&right_text_color=%23f9f7f1&left_text=reads!" alt="Total number of reads" title="Page visit counter">
     </div>
 
     <script src="newspaper.js"></script>

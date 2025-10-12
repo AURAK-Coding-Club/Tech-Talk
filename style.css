@@ -275,5 +275,11 @@ p{
         line-height: 54px;
         overflow: hidden;
     }
+    .weatherforcastbox{
+        display: block !important;
+        width: 90%;
+        margin: 0 auto 20px auto;
+        left: 0;
+    }
 
 }
