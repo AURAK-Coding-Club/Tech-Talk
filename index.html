@@ -169,8 +169,8 @@
       /* Visitor Counter Badge Styles */
       .visitor-counter {
         position: absolute;
-        top: 50px;
-        right: 420px;
+        top: 0;
+        right: 0;
         z-index: 1000;
         opacity: 1.0;
         transition: opacity 0.3s ease;
@@ -204,6 +204,10 @@
     <div class="head">
         <div class="headerobjectswrapper">
             <div class="weatherforcastbox">
+                    <div style="margin-bottom: 4px; display: flex; align-items: center;">
+                    <img src="assets/github.png" alt="GitHub" style="width: 16px; height: 16px; margin-right: 6px;">
+                    <a href="https://github.com/AURAK-Coding-Club" target="_blank" style="color: black; text-decoration: none;">Find us on GitHub</a>
+                </div>
                 <div style="margin-bottom: 4px; display: flex; align-items: center;">
                     <img src="assets/youtube.png" alt="YouTube" style="width: 16px; height: 16px; margin-right: 6px;">
                     <a href="https://www.youtube.com/@AurakCodingClub" target="_blank" style="color: black; text-decoration: none;">Watch us on YouTube</a>
@@ -212,10 +216,10 @@
                     <img src="assets/discord.png" alt="Discord" style="width: 16px; height: 16px; margin-right: 6px;">
                     <a href="https://discord.gg/HRJCd6hMcz" target="_blank" style="color: black; text-decoration: none;">Chat with us on Discord</a>
                 </div>
-                <div style="margin-bottom: 4px; display: flex; align-items: center;">
-                    <img src="assets/github.png" alt="GitHub" style="width: 16px; height: 16px; margin-right: 6px;">
-                    <a href="https://github.com/AURAK-Coding-Club" target="_blank" style="color: black; text-decoration: none;">Find our updates on GitHub</a>
-                </div>
+            </div>
+            <!-- Visitor Counter Badge -->
+            <div class="visitor-counter">
+                <img src="https://visitor-badge.laobi.icu/badge?page_id=AURAK-TECH-TALK&left_color=%231f1f1f&right_color=%231f1f1f&left_text_color=%23f9f7f1&right_text_color=%23f9f7f1&left_text=reads" alt="Total number of reads" title="Page visit counter">
             </div>
             <header>AURAK'S <span class="tech-talk-underline">Tech Talk
               <div class="tech-talk-popup">
@@ -253,11 +257,6 @@
                 <!-- Articles will be loaded here dynamically -->
             </div>
         </div>
-    </div>
-
-    <!-- Visitor Counter Badge -->
-    <div class="visitor-counter">
-        <img src="https://visitor-badge.laobi.icu/badge?page_id=aurak-coding-club.github.io/Tech-Talk&left_color=%231f1f1f&right_color=%231f1f1f&left_text_color=%23f9f7f1&right_text_color=%23f9f7f1&left_text=reads!" alt="Total number of reads" title="Page visit counter">
     </div>
 
     <script src="newspaper.js"></script>
