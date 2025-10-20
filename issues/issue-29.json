@@ -39,25 +39,27 @@
             "columnNumber": 2,
             "articles": [
                 {
-                    "headline": "yap",
+                    "headline": "Broadcom and OpenAI Announce AI Chip Partnership",
                     "headlineClass": "hl5",
-                    "readMoreLink": "put a link here",
+                    "readMoreLink": "https://openai.com/index/openai-and-broadcom-announce-strategic-collaboration",
                     "content": [
                         {
                             "type": "paragraph",
-                            "text": "yap"
+                            "text": "Broadcom and OpenAI have confirmed a multi-year partnership to co-develop custom artificial intelligence GPUs. Under the agreement, OpenAI will design specialized AI accelerator chips tailored to its model requirements, which Broadcom will then manufacture."
+                        },
+                        {
+                            "type": "figure",
+                            "src": "https://images.ctfassets.net/kftzwdyauwt9/3e2LS2FSKYBKWIZX3XImqP/b56a0e28388436f3f341208ceac36788/OAIxBroadcom_1920x1080.png?w=1920&q=90&fm=webp",
+                            "alt": "Broadcom and OpenAI AI Chip Partnership",
+                            "caption": "Broadcom and OpenAI AI Chip Partnership."
                         },
                         {
                             "type": "paragraph",
-                            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                            "text": "This strategic collaboration is aimed at addressing the increasing demand for high-performance, energy-efficient hardware necessary to train and operate large-scale AI models."
                         },
                         {
                             "type": "paragraph",
-                            "text": "yap"
-                        },
-                        {
-                            "type": "paragraph",
-                            "text": "yap"
+                            "text": "The move reflects a growing trend of major AI firms seeking to create bespoke silicon to optimize performance and reduce dependence on third-party chip suppliers in a competitive market."
                         }
                     ]
                 }
@@ -67,25 +69,27 @@
             "columnNumber": 3,
             "articles": [
                 {
-                    "headline": "yap",
+                    "headline": "Apple Unveils New M5-Powered Devices",
                     "headlineClass": "hl1",
-                    "readMoreLink": "put link here",
+                    "readMoreLink": "https://www.apple.com/newsroom/2025/10/apple-unleashes-m5-the-next-big-leap-in-ai-performance-for-apple-silicon",
                     "content": [
                         {
                             "type": "paragraph",
-                            "text": "yap"
+                            "text": "Apple has announced a new generation of products built around its latest M5 silicon. The updated lineup includes a revised Vision Pro headset, a new 14-inch MacBook Pro, and a refreshed iPad Pro, all featuring the new chip."
                         },
                         {
                             "type": "paragraph",
-                            "text": "yap"
+                            "text": "The M5 processor is reported to have a 10-core CPU and GPU architecture, incorporating advanced neural accelerators designed to significantly boost performance for AI-driven applications and complex computational tasks."
+                        },
+                        {
+                            "type": "figure",
+                            "src": "https://www.apple.com/newsroom/images/2025/10/apple-unleashes-m5-the-next-big-leap-in-ai-performance-for-apple-silicon/article/Apple-M5-hero-251015_inline.jpg.large_2x.jpg",
+                            "alt": "Apple M5 Chip",
+                            "caption": "Apple M5 Chip."
                         },
                         {
                             "type": "paragraph",
-                            "text": "yap"
-                        },
-                        {
-                            "type": "paragraph",
-                            "text": "yap"
+                            "text": "The release reinforces Apple's strategy of leveraging in-house chip development to drive innovation and maintain tight integration between its hardware and software ecosystems."
                         }
                     ]
                 }
@@ -120,7 +124,7 @@
                     "content": [
                         {
                             "type": "paragraph",
-                            "text": "yap"
+                            "text": "The QWERTY keyboard layout was created to solve a mechanical issue in early typewriters, not to improve typing speed. Its inventor, Christopher Latham Sholes, arranged the keys to separate frequently used letter pairs, which prevented the machine's typebars from clashing and jamming. This design intentionally slowed typists down to a speed the hardware could handle, and despite its original purpose being obsolete, it has remained the standard."
                         }
                     ]
                 }
@@ -137,7 +141,7 @@
                     "content": [
                         {
                             "type": "paragraph",
-                            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                            "text": "They told me I can write anything my heart desires in this section. Ofcourse, plugging in my Discord server is what my heart desires the most, but perhaps there is something I can talk about that'll be of interest; I'm sure. Recently I came across this awesome tool called NotebookLM. It's an AI tool that generates audio files in a podcast style based off a pdf document you provide. It can also generate full video presentations if you prefer visualizing rather than listening. In either case, this tool is incredibly awesome and even used and promoted by multiple professors in AURAK. Check it out at \"https://notebooklm.google\"."
                         },
                         {
                             "type": "paragraph",
