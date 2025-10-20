@@ -11,25 +11,25 @@
             "columnNumber": 1,
             "articles": [
                 {
-                    "headline": "Microsoft breach",
+                    "headline": "Major AWS Outage Disrupts Global Services",
                     "headlineClass": "hl3",
-                    "readMoreLink": "put link here",
+                    "readMoreLink": "https://www.bbc.com/news/live/c5y8k7k6v1rt",
                     "content": [
                         {
                             "type": "emphasis",
-                            "text": "welcome people"
+                            "text": "Welcome Back, Coders! New semester, new updates! Tech never sleeps and neither do we (almost). This edition of Tech Talk is packed with the latest buzz, breakthroughs, and byte-sized news to get your brain ticking."
                         },
                         {
                             "type": "paragraph",
-                            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                            "text": "Amazon Web Services (AWS) experienced a significant and widespread outage on October 20, affecting numerous online platforms and services globally. The disruption impacted prominent applications such as Snapchat, Fortnite, and various corporate services that depend on AWS infrastructure for hosting and operations. The incident has intensified discussions within the tech industry regarding the vulnerabilities associated with a heavy reliance on a small number of major cloud service providers and the potential for single points of failure to cause cascading disruptions across the internet. AWS has acknowledged the issues and is actively working on service restoration, though the root cause has not yet been publicly detailed."
                         },
                         {
                             "type": "citation",
-                            "text": "\"what the helly\""
+                            "text": "\"The best way to predict the future is to invent it.\""
                         },
                         {
                             "type": "paragraph",
-                            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                            "text": "This quote is attributed to Alan Kay, a pioneering American computer scientist. Kay is renowned for his seminal work on object-oriented programming and graphical user interfaces (GUIs) while at Xerox PARC. His visionary concepts heavily influenced the development of the personal computer, including the Apple Macintosh, and his words capture the proactive and innovative spirit that drives the technology industry."
                         }
                     ]
                 }
